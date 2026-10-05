@@ -1,0 +1,23 @@
+{
+  "name": "possibilities-skills",
+  "description": "Portable skill families for Claude Code, Codex, and OpenCode",
+  "owner": { "name": "possibilities" },
+  "plugins": [
+    {
+      "name": "design",
+      "source": "./",
+      "description": "Cross-platform design judgment, exploration, interaction, component discovery, and critique",
+      "author": { "name": "possibilities" },
+      "version": "0.1.0",
+      "strict": false,
+      "skills": [
+        "./skills/design",
+        "./skills/design-explore",
+        "./skills/design-visual",
+        "./skills/design-interaction",
+        "./skills/design-components",
+        "./skills/design-critique"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "family": "design",
+  "version": "0.1.0",
+  "status": "implemented-smoke-validated",
+  "owner": "possibilities/skills maintainers",
+  "source": "https://github.com/possibilities/skills",
+  "runtime_root": "skills",
+  "members": ["design", "design-explore", "design-visual", "design-interaction", "design-components", "design-critique"],
+  "platforms": ["web", "mobile", "desktop", "cli", "tui"],
+  "provenance": {
+    "retrieved_at": "2026-09-29",
+    "method": "agentwiki CLI get; complete Markdown source fingerprints",
+    "sources": [
+      {"slug": "designing-interfaces-with-clarity-and-character", "sha256": "6c0fb842bd0d81cf63c3765b92f4d7000e38d81215d87e5bf7bac9b767df1180"},
+      {"slug": "designing-interactions-that-feel-trustworthy-and-alive", "sha256": "60da2e46c91af204fe1bfffed8988d26366c405c2f0fe35cea877286a69b6728"},
+      {"slug": "a-practical-design-exploration-and-critique-playbook", "sha256": "02c972a6b81d48c104cce2fb8bd1b17b2951504dc64f6601dbb7027802a2b124"}
+    ]
+  },
+  "routes": [
+    {"skill": "design", "owns": "task integration and proportional routing", "excludes": ["backend-only architecture", "mandatory leaf traversal"]},
+    {"skill": "design-explore", "owns": "an unresolved direction and fair comparison", "excludes": ["ceremonial redesign for a bounded repair"]},
+    {"skill": "design-visual", "owns": "hierarchy, visual vocabulary, data and systems", "excludes": ["fixed house aesthetic", "web geometry as universal"]},
+    {"skill": "design-interaction", "owns": "state and gesture truth, continuity, recovery", "excludes": ["visual reskin as behavioral repair"]},
+    {"skill": "design-components", "owns": "compatible reuse and bounded source discovery", "excludes": ["automatic framework migration", "unrequested service installation"]},
+    {"skill": "design-critique", "owns": "evidence-linked findings and scoped repair", "excludes": ["screenshot as input verification", "unrequested edits during review"]}
+  ],
+  "optional_capabilities": [
+    {"names": ["shadcn"], "condition": "established or selected shadcn stack", "fallback": "project CLI and official docs"},
+    {"names": ["ai-elements", "ai-sdk"], "condition": "actual selected component/runtime owner", "fallback": "existing project owner and its docs"},
+    {"names": ["vercel-react-best-practices", "web-design-guidelines"], "condition": "React implementation or web code review respectively", "fallback": "project and platform guidance"},
+    {"names": ["native-sdk"], "condition": "actual Native SDK project", "fallback": "actual toolkit docs"},
+    {"names": ["desktop", "terminal-control"], "condition": "macOS native or PTY operation respectively", "fallback": "available target tools; report unobserved behavior"},
+    {"names": ["brain", "search", "scrape", "find-skills"], "condition": "named evidence or capability gap", "fallback": "available sources and bounded uncertainty"},
+    {"names": ["plannotator-*", "hunk-review"], "condition": "human-requested matching review surface", "fallback": "findings in the requested output"}
+  ],
+  "loading": {"initial_target": "root plus needed leaf and target reference", "leaf_self_contained": true, "resolve_names": "current host catalog; prefer same plugin family", "return_to_router": false},
+  "distribution": {"primary": "skills CLI selected bundles", "claude_plugin": "design@possibilities-skills", "mcp_required": false, "maintenance_loaded": false, "claude_cache_includes_repo_files": true},
+  "evaluation": {"scenarios": "evals/evals.json", "results": "evals/results.json", "human_review": "pending"},
+  "freshness": {
+    "adapter_review": "monthly when maintaining; also on failure",
+    "discovery_seed_review": "quarterly when maintaining",
+    "triggers": ["wiki fingerprint or supersession changes", "wrong-medium routing", "repeated human correction", "major toolkit/adapter release", "license change", "failed capability probe", "independent leaf no longer useful"],
+    "promotion_rule": "record source evidence and intended scenario before adopting a new default",
+    "retirement_rule": "record reason, replacement, affected routes, and compatibility impact"
+  }
+}

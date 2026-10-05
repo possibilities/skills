@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "family_version": "0.1.0",
+  "date": "2026-09-29",
+  "runtime_tree_sha256": "96191740c526a3d75cb7c30c2c15c47f7e949cd94ce4fc24d4c99aa59216ce78",
+  "type": "paired planning-only behavioral smoke comparison",
+  "executor": "harness default subagents; exact child model ID not reported",
+  "runs_per_case_per_configuration": 1,
+  "with_skill_loading": "explicit file-based skill loading; cases 1–3 router, case 4 standalone components leaf",
+  "baseline": "same task/evidence without new design-family files",
+  "grader": "independent subagent using skill-creator grader instructions",
+  "cases": [
+    {"id": 1, "name": "django-small-repair", "with_skill": {"passed": 4, "total": 4, "words": 393}, "without_skill": {"passed": 4, "total": 4, "words": 354}, "finding": "Substantive tie: bounded existing-stack repair and honest browser verification plan."},
+    {"id": 2, "name": "native-interruption-and-identity", "with_skill": {"passed": 4, "total": 4, "words": 605}, "without_skill": {"passed": 4, "total": 4, "words": 613}, "finding": "Substantive tie: canceled generation/cleanup and pressed-item identity; neither claims device proof."},
+    {"id": 3, "name": "cli-versus-tui-contracts", "with_skill": {"passed": 4, "total": 4, "words": 451}, "without_skill": {"passed": 3, "total": 4, "words": 501}, "finding": "Baseline omitted terminal cursor/mode/shell restoration after exit/interruption; both preserve streams and TUI selection."},
+    {"id": 4, "name": "base-ui-component-selection", "with_skill": {"passed": 5, "total": 5, "words": 479}, "without_skill": {"passed": 4, "total": 5, "words": 496}, "finding": "Baseline omitted installation/file-target and overwrite review; both prefer compatible local/official choices and one scroll owner."}
+  ],
+  "pooled": {"with_skill": {"passed": 17, "total": 17}, "without_skill": {"passed": 15, "total": 17}},
+  "timing_tokens_cost": {"available": false, "reason": "Harness completion notifications provided no metrics; no values inferred from response lengths."},
+  "human_review": "pending",
+  "local_workspace": "design-workspace/iteration-1",
+  "local_viewer": "design-workspace/iteration-1/review.html",
+  "limits": [
+    "One run per configuration; no repeatability or variance claim.",
+    "Planning outputs only; no rendered UI, application execution, real device, or end-to-end native-host model run.",
+    "Loaded-path counts are executor self-reports, not trusted tool traces.",
+    "Strong scaffolded baselines; narrow differences do not establish broad causal uplift.",
+    "Compound rubric terms restoration and targets were interpreted as terminal cleanup and installation destinations; broader readings could yield a complete tie.",
+    "Automatic triggering and namespaced model routing were not evaluated."
+  ],
+  "planned_not_run": [5, 6, 7, 8],
+  "next_iteration": ["Split compound assertions before new runs", "Runnable/rendered fixtures", "Less-predecided component alternatives and target collisions", "Actual lifecycle/PTY evidence", "Fresh host/role invocation", "Human visual and workflow review"]
+}

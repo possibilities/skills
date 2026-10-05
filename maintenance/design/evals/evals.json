@@ -1,0 +1,86 @@
+{
+  "skill_name": "design",
+  "evals": [
+    {
+      "id": 1,
+      "name": "django-small-repair",
+      "expectations": [
+        "Keeps the correction in existing Django/plain CSS and preserves approved composition, typography, theme, and URLs without proposing a library migration.",
+        "Provides a concrete content-fit correction that keeps the primary Retry action reachable and makes meaningful long labels available, rather than merely shrinking everything.",
+        "Distinguishes source-based diagnosis from unobserved rendering and gives browser checks for narrow width, long content, and keyboard or zoom behavior.",
+        "Keeps the response a bounded repair plan without unnecessary design alternatives, external component search, or claims of edits/tests performed."
+      ],
+      "prompt": "Our existing Django server-rendered incident queue uses plain HTML/CSS, no React. The composition is approved. At 360px, the row grid `grid-template-columns: 1fr 5rem 6rem` and `.title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis }` clip important names like 'Payments reconciliation — North America', while the Retry button is pushed out. Rows also show a textual status. We only have this source excerpt and a report, no running browser or screenshot. Give a focused repair plan and verification sequence, under 450 words. Do not edit or install anything. Keep our typography, theme, and public URLs.",
+      "expected_output": "Bounded non-React web repair; preserve approved design, reflow/prioritize identity/state/recovery, useful long-label access, source-vs-rendered evidence distinction and browser verification; no library search or ceremonial alternatives.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "native-interruption-and-identity",
+      "expectations": [
+        "Invalidates the canceled Android interaction identity/generation so a delayed acceptance cannot reactivate capture, with release/cleanup ownership explained.",
+        "Binds macOS activation to the identity pressed or cancels safely when it is no longer valid, never retargeting pointer-up to the newly arrived item.",
+        "Preserves both native stacks and approved visuals, and supplies distinct lifecycle and pointer-arrival repro/recheck sequences.",
+        "States that device/window behavior is unverified and identifies the actual target evidence needed rather than treating the proposed contract as tested."
+      ],
+      "prompt": "We have two related interaction defects; propose contracts and minimal repro/recheck sequences, not code, under 650 words. In our Android Jetpack Compose push-to-talk control: press sends start request G, backgrounding sends stop, then a delayed acceptance for G sets recording=true. Returning to the screen sometimes records with no finger down. Separately, our native macOS arrival panel shows item A at pointer-down, incoming B replaces it, and pointer-up opens B. The visuals are approved. No device/window tools are available in this exercise. Explain what can be concluded now and what target evidence is still needed. Keep both native stacks.",
+      "expected_output": "Model current interaction identity/cancel invalidation and stale accept; bind activation to pressed item; preserve approved visuals; distinguish Android lifecycle from macOS first-click/focus; no native-sdk assumption or false device verification.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "cli-versus-tui-contracts",
+      "expectations": [
+        "Preserves the CLI JSON array on stdout, diagnostics on stderr, failure exit 2, and noninteractive/script compatibility while changing human readability.",
+        "Makes identity/state/recovery useful at constrained size through appropriate CLI output and TUI composition rather than changing frameworks or turning the CLI interactive.",
+        "Preserves TUI selection by stable item identity on refresh and makes a keyboard recovery path discoverable when the details pane is unavailable.",
+        "Separates stream/exit/pipe verification from real-PTY input/resize/restoration checks, and does not claim either was executed."
+      ],
+      "prompt": "Review two terminal surfaces and recommend concrete changes under 600 words, with no execution or source edits. `jobs list` is a CLI: default human columns are ID STATE NAME ACTION, `--json` emits an array on stdout, diagnostics use stderr, failure exits 2, and scripts rely on these contracts. At 48 columns long names obscure Retry. Our separate Ratatui live view has an 80-column layout: left queue/right details, recovery only in details; at 48x12 the detail pane disappears and keyboard users cannot find recovery. Refresh currently rebuilds the list and resets selection to row 0. Keep the CLI noninteractive and the TUI in Ratatui. What should differ between their designs, and which evidence would verify each?",
+      "expected_output": "Distinct CLI stream/output compatibility and TUI cell/input/refresh solutions; preserve JSON/exits, recompose at narrow/shallow size, recovery discoverable and stable selection by identity, PTY vs pipeline verification clearly separated.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "base-ui-component-selection",
+      "expectations": [
+        "Prefers existing/official compatible components and treats the exact combobox adoption as conditional on source/API evidence instead of selecting the unknown vendor demo for appearance.",
+        "Requires project-context full source/docs inspection and Base UI compatibility, explicitly rejecting direct reuse of fallback Radix asChild code or source-free MCP metadata as sufficient proof.",
+        "Gives relevant selection/adoption checks for keyboard/accessibility, empty/clear states, narrow fit, dependencies and targets; broadens only for a named unmet capability.",
+        "Keeps a single chat scrolling owner and does not add AI Elements Conversation around the existing MessageScroller for streaming follow.",
+        "Preserves selection-only scope and distinguishes proposed inspection/verification from work actually performed."
+      ],
+      "prompt": "Select a component approach for our existing Next.js/pnpm/Tailwind-v4 Base UI app, and give an execution handoff under 600 words. This is selection only: do not run tools, install, or fetch live sources. Available evidence: local Button/Input/Popover/Command and token aliases; official @shadcn combobox metadata says it depends on button and input-group; our shared MCP example uses `asChild` from a fallback Radix demo and its view response contains counts but no source. A Shoogle result advertises @vendor/mega-picker with animation, two extra packages, unknown license and unknown base compatibility. We need an accessible searchable filter for 80 known options, empty results, clear selection, and narrow-width fit; no exotic motion. What do you select now, what do you inspect next, and when would you broaden the search? Also our existing chat uses shadcn MessageScroller; should we wrap it in AI Elements Conversation for streaming follow?",
+      "expected_output": "Official/local-first provisional choice; project-local full source/docs/base check before final adoption; do not copy Radix example or declare metadata accessible; named-gap expansion only, unknown vendor evidence; one chat scroll owner and no redundant wrapper.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "matched-exploration",
+      "prompt": "Explore whether a mobile editing app should lead with the document or a task checklist. The current typography is liked. Propose a small fair comparison, including how to save and adopt the reviewed choice while editing continues. No prototype implementation yet.",
+      "expected_output": "Baseline and meaningful alternatives with matched content/state/size/readiness; smallest fidelity; approved typography; snapshot not delayed-current-state save; preview and production distinct.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "name": "screenshot-evidence-limits",
+      "prompt": "Critique this onboarding screenshot for task clarity and accessibility; don't edit. Explain which claims need keyboard, screen-reader, or device observation before they can be established. Use the supplied screenshot in a future run.",
+      "expected_output": "Evidence-linked visual findings without inferred interaction proof; no edits; needs an actual screenshot fixture before execution.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "name": "standalone-leaf-namespace",
+      "prompt": "With only the design-critique leaf installed under a namespaced plugin, review a supplied native-window evidence packet. Finish the bounded review without requiring the router's directory or guessing other skill paths.",
+      "expected_output": "Self-contained leaf use, catalog-based optional routes and honest missing-capability fallback; requires a native evidence packet for execution.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "name": "backend-near-miss",
+      "prompt": "Design a database replication architecture for a backend-only append log. There is no user-facing interface in scope.",
+      "expected_output": "Do not auto-trigger the interface design family; assess in a future host trigger evaluation.",
+      "files": []
+    }
+  ]
+}

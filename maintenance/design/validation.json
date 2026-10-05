@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-29",
+  "runtime_tree_sha256": "96191740c526a3d75cb7c30c2c15c47f7e949cd94ce4fc24d4c99aa59216ce78",
+  "hash_method": "SHA256 over sorted skill file relative path, NUL, raw content, NUL, including skills/ prefix",
+  "versions": {"skills_cli": "1.7.0", "claude": "2.1.285", "codex": "0.159.1", "opencode": "2.0.16"},
+  "packaging": {
+    "status": "passed",
+    "isolation": "temporary HOME, XDG directories, Claude/Codex profiles, npm cache, project and TMPDIR",
+    "checks": [
+      "six skills discovered by skills add --list",
+      "claude plugin validate --strict --json: no errors or warnings",
+      "project add for claude-code/codex/opencode: byte-identical bundles and Claude links",
+      "project installation contains only selected runtime bundles",
+      "global add in temporary home: byte-identical bundles and Claude links",
+      "project and global removal confirmed",
+      "single design-components leaf with --copy: complete references and no sibling requirement",
+      "Claude marketplace add/install/details/uninstall/remove in temporary profile",
+      "Claude inventory: six skills, zero agents/hooks/MCP/LSP"
+    ],
+    "evidence_local": "design-package.j_2e3o_5 under the session's approved temporary directory",
+    "hosted_install_and_update": "not exercised"
+  },
+  "native_catalogs": {
+    "claude": {"status": "passed", "method": "native plugin component inventory", "skills": 6},
+    "codex": {"status": "passed", "method": "owned temporary app-server initialize and skills/list", "design_skills": 6, "parse_errors": 0},
+    "opencode": {
+      "status": "passed",
+      "method": "fresh isolated session; native skill activation with resume=false; stored message readback",
+      "design_skills": 6,
+      "source": ".agents/skills only; .opencode copies and explicit source config removed",
+      "body_matches_source": true,
+      "model_tokens": 0,
+      "observations": ["cold standalone skill-list API returned empty, including built-ins", "actual session activation successfully resolved all six skills", "separate isolated HTTP probe was refused by native CLI health check; standalone session API supplied proof"],
+      "next_check": "intended personal Stack role composition and model routing"
+    },
+    "evidence_local": "design-native-discovery.vqaiio13 under the session's approved temporary directory",
+    "model_turns_in_native_hosts": false
+  },
+  "static": {"status": "passed", "checks": ["metadata JSON parse", "directory/frontmatter identity", "marketplace family membership", "runtime local link existence and bundle containment", "no author-machine paths in runtime", "entrypoints under 500 lines", "project documentation links", "whitespace check"]},
+  "fleet_map": {"path": "../agentstart/skills/fleet/MAP.md", "doc_check": "passed", "validation_suite": "passed with canonical approved TMPDIR", "initial_run_note": "notification-shim test compared /var and /private/var paths; no test/production change was made"},
+  "live_personal_configuration_modified": false,
+  "review": "human review pending"
+}

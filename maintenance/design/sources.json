@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-09-29",
+  "sources": [
+    {
+      "id": "consolidated-wiki",
+      "lifecycle": "adopted",
+      "kind": "authored doctrine",
+      "source": "agentwiki consolidated-design guides; exact slugs/hashes in family.json",
+      "evidence": "All three read completely through CLI; distilled into workflows and references",
+      "scope": "cross-platform judgment, not numerical platform standards",
+      "runtime": "self-contained distillation",
+      "limitations": ["product-specific historical rules deliberately excluded"]
+    },
+    {
+      "id": "official-shadcn",
+      "lifecycle": "adopted-optional-route",
+      "source": "https://ui.shadcn.com/docs/mcp",
+      "upstream_revision": "08ab84f7d1952cc1f36055aa8931213a86b01bbd",
+      "observed_cli_version": "4.21.0",
+      "observed_mcp_package_version": null,
+      "validated_at": "2026-09-29",
+      "validated_scope": ["explicit official primitive/block search", "MCP summaries/examples", "project CLI info/view/docs", "process cwd probe"],
+      "limitations": ["MCP config lost base/style", "view summary omitted source", "search add-command formatter defect", "mcp cwd flag did not retarget handlers", "no component installed during research"],
+      "compatibility": "selected shadcn-compatible project; inspect actual base/framework/version",
+      "license": "inspect selected item and assets",
+      "runtime": "optional MCP; project CLI fallback"
+    },
+    {
+      "id": "shoogle-http",
+      "lifecycle": "adopted-optional-route",
+      "source": "https://shoogle.dev/mcp/other-mcp-clients",
+      "endpoint": "https://mcp.shoogle.dev/mcp",
+      "validated_at": "2026-09-29",
+      "validated_scope": ["initialize", "tools/list", "global item-name search", "scoped item-name search"],
+      "limitations": ["concurrent-call rate limit", "bare namespace example mismatch", "semantic MCP search not established", "per-host setup not deployed"],
+      "compatibility": "Streamable HTTP MCP; exact live schemas",
+      "license": "service terms unassessed; inspect original item license",
+      "runtime": "use if available after a named official gap"
+    },
+    {
+      "id": "shoogle-webmcp",
+      "lifecycle": "candidate",
+      "source": "https://shoogle.dev",
+      "validated_at": "2026-09-29",
+      "validated_scope": ["static inspection only"],
+      "limitations": ["both browser routes failed before runtime enumeration; support unknown"],
+      "runtime": "not a required adapter; enumerate actual page tools if offered"
+    },
+    {
+      "id": "brain",
+      "lifecycle": "adopted-optional-route",
+      "source": "available agentbrain contract",
+      "validated_at": "2026-09-29",
+      "validated_scope": ["saved research retrieval"],
+      "evidence_ids": [{"document_id": 973, "chunk_ids": [14354, 14355]}, {"document_id": 517, "chunk_ids": [7885]}],
+      "limitations": ["index time is not upstream freshness; document 517 has frozen-recovery provenance"],
+      "runtime": "evidence discovery, not skill activation"
+    },
+    {
+      "id": "xcom",
+      "lifecycle": "candidate",
+      "source": "local @stack/xcom package API",
+      "validated_at": "2026-09-29",
+      "validated_scope": ["package identity and attempted read-only calls"],
+      "limitations": ["service socket absent; no archive retrieval established"],
+      "related_evidence": "authenticated twitter-cli 0.8.6 read-only search succeeded with initialization warning",
+      "runtime": "discover available interface; do not assume command or service"
+    },
+    {
+      "id": "ui-skills",
+      "lifecycle": "candidate",
+      "source": "https://github.com/ibelick/ui-skills",
+      "endpoint": "https://www.ui-skills.com/mcp",
+      "validated_at": "2026-09-29",
+      "validated_scope": ["upstream documentation for list_skills/get_skill"],
+      "limitations": ["MCP not connected in research; no skill adopted"],
+      "runtime": "optional discovery lead, inspect fetched guidance"
+    },
+    {
+      "id": "purpose-shelf",
+      "lifecycle": "candidate",
+      "sources": ["https://github.com/tremorlabs/tremor", "https://github.com/magicuidesign/magicui", "https://github.com/vercel/ai-elements", "https://github.com/assistant-ui/assistant-ui", "https://github.com/mrzachnugent/react-native-reusables"],
+      "validated_at": "2026-09-29",
+      "validated_scope": ["upstream identity, purpose, repository license leads"],
+      "limitations": ["selected-item compatibility, assets, and rendering untested"],
+      "runtime": "purpose-based leads, not preconfigured registries"
+    },
+    {
+      "id": "awesome-seeds",
+      "lifecycle": "candidate",
+      "sources": ["https://github.com/bytefer/awesome-shadcn-ui", "https://github.com/klaufel/awesome-design-systems", "https://github.com/goabstract/Awesome-Design-Tools", "https://github.com/punkpeye/awesome-mcp-servers"],
+      "validated_at": "2026-09-29",
+      "validated_scope": ["discovery catalogs inspected"],
+      "limitations": ["mixed products and stale aliases; no endorsement of entries"],
+      "runtime": "bounded gap-driven discovery only"
+    }
+  ]
+}
